@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://dn4kumj8xcuvo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6ceg1"]
+font_size = 28
+
+[node name="TownView" type="VBoxContainer" unique_id=1202796939]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -37.5
+offset_right = 37.5
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_constants/separation = 8
+
+[node name="TitleBar" type="MarginContainer" parent="." unique_id=1238721128]
+custom_minimum_size = Vector2(600, 48)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="TitleBar" unique_id=1554359794]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Township"
+label_settings = SubResource("LabelSettings_6ceg1")
+
+[node name="ReferenceRect" type="ReferenceRect" parent="TitleBar" unique_id=1765438577]
+layout_mode = 2
+border_color = Color(0, 1.0039216, 0, 1)
+
+[node name="ResourceBar" type="HBoxContainer" parent="." unique_id=461331810]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="Wood" type="MarginContainer" parent="ResourceBar" unique_id=1924549759]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+
+[node name="Label" type="Label" parent="ResourceBar/Wood" unique_id=1380977476]
+layout_mode = 2
+text = "Wood: <n>"
+
+[node name="Grain" type="MarginContainer" parent="ResourceBar" unique_id=784199118]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ResourceBar/Grain" unique_id=2004144291]
+layout_mode = 2
+text = "Grain: <n>"
+
+[node name="Food" type="MarginContainer" parent="ResourceBar" unique_id=1226169082]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ResourceBar/Food" unique_id=1455662085]
+layout_mode = 2
+text = "Food: <n>"
+
+[node name="Time" type="MarginContainer" parent="ResourceBar" unique_id=386109296]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_right = 16
+
+[node name="Label" type="Label" parent="ResourceBar/Time" unique_id=1317711113]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Time: Morning"
+horizontal_alignment = 2
+
+[node name="TownSelect" type="HBoxContainer" parent="." unique_id=1261541123]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+
+[node name="Farm" type="MarginContainer" parent="TownSelect" unique_id=244813743]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="TownSelect/Farm" unique_id=1676512530]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TownSelect/Farm" unique_id=1600666442]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Farm"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="TownSelect/Farm" unique_id=197234879]
+layout_mode = 2
+border_color = Color(0, 0, 1, 1)
+
+[node name="Town" type="MarginContainer" parent="TownSelect" unique_id=1814807037]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="TownSelect/Town" unique_id=1593739685]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TownSelect/Town" unique_id=309098763]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Town"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="TownSelect/Town" unique_id=1602659311]
+layout_mode = 2
+border_color = Color(0, 0, 1, 1)
+
+[node name="Home" type="MarginContainer" parent="TownSelect" unique_id=1125651329]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="TownSelect/Home" unique_id=2111026904]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TownSelect/Home" unique_id=1770768662]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Home"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="TownSelect/Home" unique_id=1694889340]
+layout_mode = 2
+border_color = Color(0, 0, 1, 1)
+
+[node name="Bridge" type="MarginContainer" parent="TownSelect" unique_id=1914375535]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="TownSelect/Bridge" unique_id=1739956882]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TownSelect/Bridge" unique_id=339982581]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Bridge"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="TownSelect/Bridge" unique_id=1422797290]
+layout_mode = 2
+border_color = Color(0, 0, 1, 1)
+
+[node name="Tavern" type="MarginContainer" parent="TownSelect" unique_id=307801115]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="TownSelect/Tavern" unique_id=571810021]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TownSelect/Tavern" unique_id=1764259028]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Tavern"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="TownSelect/Tavern" unique_id=738927248]
+layout_mode = 2
+border_color = Color(0, 0, 1, 1)
+
+[node name="Woods" type="MarginContainer" parent="TownSelect" unique_id=1343780074]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="TownSelect/Woods" unique_id=1044014603]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TownSelect/Woods" unique_id=1890844201]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Woods"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="TownSelect/Woods" unique_id=762012810]
+layout_mode = 2
+border_color = Color(0, 0, 1, 1)

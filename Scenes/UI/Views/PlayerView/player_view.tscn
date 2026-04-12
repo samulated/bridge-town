@@ -1,0 +1,204 @@
+[gd_scene format=3 uid="uid://dgdnvoiwrl8dc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3wagf"]
+font_size = 20
+
+[node name="PlayerView" type="VBoxContainer" unique_id=1271479148]
+custom_minimum_size = Vector2(200, 0)
+offset_right = 99.0
+offset_bottom = 27.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1191270649]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="PlayerTitle" type="MarginContainer" parent="." unique_id=1971057525]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PlayerTitle" unique_id=452636913]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Player Name"
+label_settings = SubResource("LabelSettings_3wagf")
+
+[node name="ReferenceRect" type="ReferenceRect" parent="PlayerTitle" unique_id=246389076]
+layout_mode = 2
+border_color = Color(1, 0.49411765, 0, 1)
+
+[node name="Resources" type="HBoxContainer" parent="." unique_id=736584700]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+
+[node name="Wood" type="MarginContainer" parent="Resources" unique_id=840642817]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Resources/Wood" unique_id=150449600]
+layout_mode = 2
+text = "Wood
+<n>"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Resources/Wood" unique_id=1777189375]
+layout_mode = 2
+
+[node name="Food" type="MarginContainer" parent="Resources" unique_id=1472920941]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Resources/Food" unique_id=767379460]
+layout_mode = 2
+text = "Food
+<n>"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Resources/Food" unique_id=1426622220]
+layout_mode = 2
+
+[node name="Coin" type="MarginContainer" parent="Resources" unique_id=1894858890]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Resources/Coin" unique_id=1173968469]
+layout_mode = 2
+text = "Coin
+<n>"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Resources/Coin" unique_id=1577445149]
+layout_mode = 2
+
+[node name="Needs" type="VBoxContainer" parent="." unique_id=1162177861]
+layout_mode = 2
+
+[node name="Hunger" type="MarginContainer" parent="Needs" unique_id=182073292]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Needs/Hunger" unique_id=1000488611]
+layout_mode = 2
+size_flags_vertical = 1
+show_percentage = false
+
+[node name="Label" type="Label" parent="Needs/Hunger" unique_id=544354753]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Hunger"
+
+[node name="Energy" type="MarginContainer" parent="Needs" unique_id=966521509]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Needs/Energy" unique_id=1475430669]
+layout_mode = 2
+size_flags_vertical = 1
+show_percentage = false
+
+[node name="Label" type="Label" parent="Needs/Energy" unique_id=350096730]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Energy"
+
+[node name="Health" type="MarginContainer" parent="Needs" unique_id=2128261164]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Needs/Health" unique_id=707168403]
+layout_mode = 2
+size_flags_vertical = 1
+show_percentage = false
+
+[node name="Label" type="Label" parent="Needs/Health" unique_id=1293491102]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Health"
+
+[node name="Morale" type="MarginContainer" parent="Needs" unique_id=448022528]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Needs/Morale" unique_id=497223223]
+layout_mode = 2
+size_flags_vertical = 1
+show_percentage = false
+
+[node name="Label" type="Label" parent="Needs/Morale" unique_id=884310717]
+layout_mode = 2
+size_flags_horizontal = 4
+text = " Morale"
+
+[node name="RelationshipTitle" type="MarginContainer" parent="." unique_id=1847551597]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="RelationshipTitle" unique_id=1833962538]
+layout_mode = 2
+text = "Relationships"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="RelationshipTitle" unique_id=266320185]
+layout_mode = 2
+border_color = Color(1, 1, 0, 1)
+
+[node name="Relationships" type="VBoxContainer" parent="." unique_id=362650950]
+layout_mode = 2
+
+[node name="Farmer" type="MarginContainer" parent="Relationships" unique_id=487170687]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Label" type="Label" parent="Relationships/Farmer" unique_id=1917766144]
+layout_mode = 2
+text = "Farmer : <n>"
+horizontal_alignment = 2
+
+[node name="Innkeeper" type="MarginContainer" parent="Relationships" unique_id=1090069141]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Label" type="Label" parent="Relationships/Innkeeper" unique_id=808154121]
+layout_mode = 2
+text = "Innkeep : <n>"
+horizontal_alignment = 2
+
+[node name="Woodsperson" type="MarginContainer" parent="Relationships" unique_id=532568969]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Label" type="Label" parent="Relationships/Woodsperson" unique_id=1547810567]
+layout_mode = 2
+text = "Woods : <n>"
+horizontal_alignment = 2
+
+[node name="Trader" type="MarginContainer" parent="Relationships" unique_id=1726647952]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Label" type="Label" parent="Relationships/Trader" unique_id=827946041]
+layout_mode = 2
+text = "Trader : <n>"
+horizontal_alignment = 2
