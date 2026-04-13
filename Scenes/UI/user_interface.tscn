@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dgdnvoiwrl8dc" path="res://Scenes/UI/Views/PlayerView/player_view.tscn" id="1_j6mn1"]
 [ext_resource type="PackedScene" uid="uid://dn4kumj8xcuvo" path="res://Scenes/UI/Views/TownView/town_view.tscn" id="2_ebjbk"]
+[ext_resource type="PackedScene" uid="uid://bkcsck4ca012v" path="res://Scenes/UI/Views/HistoryView/history_view.tscn" id="3_ebjbk"]
+[ext_resource type="PackedScene" uid="uid://do06lk0igethu" path="res://Scenes/UI/Views/SelectView/select_view.tscn" id="4_6q3el"]
 
 [node name="UserInterface" type="Control" unique_id=539497701]
 layout_mode = 3
@@ -27,6 +29,13 @@ layout_mode = 2
 
 [node name="CentralPage" type="VBoxContainer" parent="HBoxContainer" unique_id=951161511]
 layout_mode = 2
+theme_override_constants/separation = 12
 
 [node name="TownView" parent="HBoxContainer/CentralPage" unique_id=1202796939 instance=ExtResource("2_ebjbk")]
+layout_mode = 2
+
+[node name="HistoryView" parent="HBoxContainer/CentralPage" unique_id=1461760347 instance=ExtResource("3_ebjbk")]
+layout_mode = 2
+
+[node name="SelectView" parent="HBoxContainer" unique_id=2019666892 instance=ExtResource("4_6q3el")]
 layout_mode = 2

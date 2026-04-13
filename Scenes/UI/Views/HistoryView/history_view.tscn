@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bkcsck4ca012v"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j64yf"]
+font_size = 24
+
+[node name="HistoryView" type="VBoxContainer" unique_id=1461760347]
+custom_minimum_size = Vector2(600, 0)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="Title" type="MarginContainer" parent="." unique_id=64087211]
+layout_mode = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Title" unique_id=1005274960]
+layout_mode = 2
+border_color = Color(0, 1, 0.98039216, 1)
+
+[node name="Label" type="Label" parent="Title" unique_id=1576087267]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "History"
+label_settings = SubResource("LabelSettings_j64yf")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1889189791]
+layout_mode = 2
+
+[node name="Entries" type="VBoxContainer" parent="ScrollContainer" unique_id=1383933458]
+layout_mode = 2

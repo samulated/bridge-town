@@ -55,12 +55,22 @@ layout_mode = 2
 layout_mode = 2
 text = "Food: <n>"
 
-[node name="Time" type="MarginContainer" parent="ResourceBar" unique_id=386109296]
+[node name="Date" type="MarginContainer" parent="ResourceBar" unique_id=386109296]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/margin_top = 0
+
+[node name="Label" type="Label" parent="ResourceBar/Date" unique_id=1317711113]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Day 1"
+horizontal_alignment = 2
+
+[node name="Time" type="MarginContainer" parent="ResourceBar" unique_id=1926027764]
+layout_mode = 2
 theme_override_constants/margin_right = 16
 
-[node name="Label" type="Label" parent="ResourceBar/Time" unique_id=1317711113]
+[node name="Label" type="Label" parent="ResourceBar/Time" unique_id=442111166]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "Time: Morning"
