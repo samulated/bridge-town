@@ -1,5 +1,4 @@
 class_name Quarters
-extends Node
 ## Manager for quarter-day time blocks, also contains getters for current in-game date
 
 
